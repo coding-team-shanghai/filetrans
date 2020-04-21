@@ -5,8 +5,12 @@
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
 	switch(Message) {
 		case WM_CREATE: {
-			CreateWindow("EDIT", "", WS_CHILD|WS_VISIBLE|WS_BORDER, 5, 5, 505, 20,hwnd, (HMENU)IDC_PATH, NULL, NULL);
-			CreateWindow("BUTTON", "选取文件", WS_CHILD|WS_VISIBLE,515, 5, 100, 20,hwnd, (HMENU)IDC_CHOOSEPATH, NULL, NULL);
+			CreateWindow("EDIT", "", WS_CHILD|WS_VISIBLE|WS_BORDER, 5, 5, 405, 20,hwnd, (HMENU)IDC_PATH, NULL, NULL);
+			CreateWindow("BUTTON", "选取文件", WS_CHILD|WS_VISIBLE,415, 5, 100, 20,hwnd, (HMENU)IDC_CHOOSEPATH, NULL, NULL);
+			CreateWindow("STATIC", "    IP=", WS_CHILD|WS_VISIBLE, 5, 30, 60, 20,hwnd, (HMENU)IDC_STATIC1, NULL, NULL);
+			CreateWindow("EDIT", "", WS_CHILD|WS_VISIBLE|WS_BORDER, 70, 30, 250, 20,hwnd, (HMENU)IDC_IP, NULL, NULL);
+			CreateWindow("STATIC", "    Port=", WS_CHILD|WS_VISIBLE, 330, 30, 80, 20,hwnd, (HMENU)IDC_STATIC2, NULL, NULL);
+			CreateWindow("EDIT", "", WS_CHILD|WS_VISIBLE|WS_BORDER, 415, 30, 100, 20,hwnd, (HMENU)IDC_PORT, NULL, NULL);
 			return 0;
 		}
 		/* Upon destruction, tell the main thread to stop */
