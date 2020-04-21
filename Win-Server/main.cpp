@@ -1,9 +1,14 @@
 #include <windows.h>
+#include "main.h"
 
 /* This is where all the input to the window goes to */
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
 	switch(Message) {
-		
+		case WM_CREATE: {
+			CreateWindow("EDIT", "", WS_CHILD|WS_VISIBLE|WS_BORDER, 5, 5, 505, 20,hwnd, (HMENU)IDC_PATH, NULL, NULL);
+			CreateWindow("BUTTON", "选取文件", WS_CHILD|WS_VISIBLE,515, 5, 100, 20,hwnd, (HMENU)IDC_CHOOSEPATH, NULL, NULL);
+			return 0;
+		}
 		/* Upon destruction, tell the main thread to stop */
 		case WM_DESTROY: {
 			PostQuitMessage(0);
