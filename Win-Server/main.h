@@ -6,3 +6,4 @@
 #define IDC_IP			1004
 #define IDC_STATIC1		1005
 #define IDC_STATIC2		1006
+#define IDC_TRANS		1007
