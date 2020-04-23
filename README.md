@@ -16,6 +16,7 @@ Thank you all.
 
 -----------
 This app can be perfectly launched on Microsoft Windows(R) 10, 8.1, 8, 7.
-For Windows(R) XP, we can't find a device running Windows(R) XP in our team. So, if you have one, please test it for us.
+But, it can't be launched on Windows(R) XP.
+If you have an issue, please launch it.
 For the result, open an issue and we'll reply as quickly as we can.
 Thank you very much.
