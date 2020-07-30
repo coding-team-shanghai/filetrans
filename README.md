@@ -1,5 +1,5 @@
 # Filetrans
-----------
+
 Filetrans is a multi-platform, convenient file transporter under the same network environment.
 
 Our app is under the BSD3 license.
