@@ -2,7 +2,7 @@
 
 Filetrans is a multi-platform, convenient file transporter under the same network environment.
 
-Our app is under the BSD3 license.  
+Our app is under the GPLv3 license.  
 You can view that license in the License part on the top right.
 
 It's an app that uses the 192.168.*.* or 10.100.*.* internal IP address to transfer between PCs.  
